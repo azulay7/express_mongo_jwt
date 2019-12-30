@@ -1,0 +1,49 @@
+### Get All
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTU3NzcxNzU4NywiZXhwIjoxNTc3NzE3NjE3fQ.MuTHthuNv8FyzJhO16vMBPzJgfw1m7Jt_eF2KD0GQag
+
+### Get One
+GET http://localhost:3000/posts/5e09c2f7d1c0b938d0e06f43
+
+### Delete One
+DELETE http://localhost:3000/posts/5e09c2f7d1c0b938d0e06f44
+
+### update one
+PATCH http://localhost:3000/posts/5e0a0cf65a1bad1ed8d42f1b
+Content-Type: application/json
+
+{
+  "name": "new Post 1",
+  "postContent": "Lorem ipsum dolor sit amet"
+}
+
+### Add One
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "name": "new Post 2",
+    "postContent": "mama"
+}
+
+###====================================
+
+
+### Login
+POST http://localhost:4000/login    
+Content-Type: application/json
+
+{
+    "username": "Kyle"
+}
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTU3NzYzMTY0MH0.XfoKPaLIwrOCpQ_1TFMprxgTnhfzu5MTMJUfipreIhc"
+}
+
+###
+
